@@ -1,54 +1,38 @@
-# 🚲 Capital Bikeshare: Bikesharing Analysis and Dashboard
+# 🚲 Bikesharing Analysis and Dashboard
 
-## 📝 Analysis with Jupyter Notebook
+## -- Analisis menggunakan Colab Notebook -- 
 
-🚧 See the detail of this analysis and visualization on the [notebook](https://github.com/fikrionii/Dicoding-Bike-Sharing/blob/main/notebook-bikeshare-analysis.ipynb) 🚧
+🚧 See the detail of this analysis and visualization on the [notebook](link)
 
-### Defining Question
-1. How is the trend in the number of bike-sharing rides in recent years?
-2. What is the usage pattern of bike-sharing rides based on time of day?
-3. What season has the highest bike-sharing rides?
-4. What is the usage pattern of bike-sharing rides based on day of the week?
-5. Are there any correlations between temperatures that indicate conditions when bike-sharing rides are high?
-6. Does weather affect bikeshare usage?
+### Pertanyaan
+1. Bagaimana tren jumlah pengguna sepeda dalam beberapa tahun terakhir?
+2. Apakah cuaca berpengaruh terhadap jumlah pengguna sepeda?
+3. Musim apa yang memiliki intensitas penggunaan sepeda yang tinggi?
+4. Bagaimana kondisi yang terlihat saat sepeda digunakan pada workingday holiday, dan weekday
+5. Apakah ada korelasi temprature dan atemprature (suhu yang terasa) terhadap kondisi saat penggunaan sepeda sedang tinggi?
 
-### Insights and Findings
-1. The number of bikeshare rides in 2012 was higher than in 2011. Both years showed the same trend and seasonality, with the number of rides increasing in the middle of the year and decreasing at the beginning and end of the year.
+### Insights dan Kesimpulan
+1. Tahun 2012 menjadi tahun yang paling banyak dalam penyewaan sepeda. Setiap tahun menunjukkan tren yang sama. Pertengahan tahun terjadi kenaikan jumlah sewa, sedangkan akhir tahun terjadi penurunan. Adapun terjadi perbedaan bulan puncak penyewaan sepeda di tiap tahunnya. Puncak penyewaan sepeda tahun 2011 terjadi di bulan Juni lalu menurun hingga Desember. Sedangkan penyewaan sepeda tersepi berada di bulan Januari 2011. Tahun 2012, puncak penyewaan sepeda terjadi pada bulan September lalu menurun hingga bulan Desember 2012. Sedangkan penyewaan sepi terjadi di bulan Januari 2012.
 
-2. For registered users, the number of rides peaked at 8:00 AM and 5:00 PM, suggesting that they may have used the bikes to commute to work. For casual users, the number of rides started to increase during the day and decreased during the night.
+2. Ya, berpengaruh. Kondisi cuaca saat sedang clear/few/partly cloudy menjadi kondisi yang paling diminati sehingga jumlah penyewa sepwda menjadi tinggi dan ketika cuaca heavy rain/ice pallets/fog menjadi yang paling sedikit diminati.
 
-3. Bikeshare rides were highest during the summer season and lowest during the winter season.
+3. Sewa sepeda tertinggi berada di musim panas (Summer Season) dan terendah berada di musim dingin (Winter).
 
-4. For registered users, the number of rides was higher during weekdays. This is consistent with the findings in question 2, suggesting that registered users likely used the bikes to commute to work. For casual users, the number of rides was higher on weekends than on weekdays, indicating that they used the bikes for leisure activities on weekends.
+4. Jumlah penyewa lebih banyak di hari kerja dibanding akhir pekan/hari libur. Berdasakan hari biasa, hari Kamis menjadi posisi pertama sebagai hari dengan penyewa sepeda terbanyak, sedangkan jumlah penyewa sepeda paling sedikit berada di hari Minggu.
 
-5. Yes, there is a moderate correlation between temperature and the number of bikeshare rides. The number of rides is lowest at colder temperatures, which occur during the winter, and starts to increase as the temperature increases, which happens in the summer. However, there is a "sweet spot" or temperature range when the number of rides is highest, which is between 20°C and 30°C. This temperature range typically occurs during the summer and fall seasons. On days with these temperature conditions, we can expect the number of bikeshare rides to be high.
+5. temp dan atemp memiliki korelasi positif dengan count, sehingga jika temperatur (temp dan atemp) meningkat, maka pengguna sepeda juga cenderung meningkat. Maka, pada musim dingin dengan temperatur rendah dan dingin memiliki jumlah sewa sepeda yang lebih sedikit. Sedangkan pada musim panas dengan temperatur tinggi dan panas memiliki jumlah sewa sepeda yang banyak juga.
 
-6. Yes, the number of rides is significantly higher during clear weather than during more extreme weather conditions.
 
-## 📊 Dashboard with Streamlit
-### Streamlit Cloud
-
-🚧 View the dashboard on streamlit could directly on this link: https://capital-bikeshare-alfikri.streamlit.app/ 🚧
-
-The dashboard shows the count of total rides across the year and season. It also shows the difference casual riders and registered riders use of the bikesharing service, based on hour and day of the week.
-
-<p align="center">
-  <img src="/image/streamlit_dashboard.png" />
-
-### Run Streamlit on Local
-
-#### Install Dependencies
+#### Install requirements.txt
 
 To install all the required libraries, open your terminal/command prompt/conda prompt, navigate to this project folder, and run the following command:
 
 ```bash
-pip install -r requirements.txt
+pipreqs
 ```
 
-#### Run Dashboard
+#### Run Streamlit app
 ```bash
 cd dashboard
 streamlit run dashboard.py
 ```
-
-Thanks for visiting my project! 🔥
