@@ -1,8 +1,8 @@
-# 🚲 Bikesharing Analysis and Dashboard
+# ✨ Bikesharing Analysis and Dashboard
 
 ## -- Analisis menggunakan Colab Notebook -- 
 
-🚧 See the detail of this analysis and visualization on the [notebook](link)
+### Detail hasil visualisasi ada di [notebook](https://github.com/nabilahrahmawati/Bike-Rent-Dashboard/blob/main/Projek_Bikesharing.ipynb)
 
 ### Pertanyaan
 1. Bagaimana tren jumlah pengguna sepeda dalam beberapa tahun terakhir?
@@ -21,15 +21,6 @@
 4. Jumlah penyewa lebih banyak di hari kerja dibanding akhir pekan/hari libur. Berdasakan hari biasa, hari Kamis menjadi posisi pertama sebagai hari dengan penyewa sepeda terbanyak, sedangkan jumlah penyewa sepeda paling sedikit berada di hari Minggu.
 
 5. temp dan atemp memiliki korelasi positif dengan count, sehingga jika temperatur (temp dan atemp) meningkat, maka pengguna sepeda juga cenderung meningkat. Maka, pada musim dingin dengan temperatur rendah dan dingin memiliki jumlah sewa sepeda yang lebih sedikit. Sedangkan pada musim panas dengan temperatur tinggi dan panas memiliki jumlah sewa sepeda yang banyak juga.
-
-
-#### Install requirements.txt
-
-To install all the required libraries, open your terminal/command prompt/conda prompt, navigate to this project folder, and run the following command:
-
-```bash
-pipreqs
-```
 
 #### Run Streamlit app
 ```bash
